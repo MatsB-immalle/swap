@@ -10,27 +10,26 @@ namespace swap
     {
         static void Main(string[] args)
         {
-            int a = 6;
-            int b = 8;
-            int c = 20;
-            int d = 30;
+            string a = "Mats";
+            string b = "Dries";
 
-            swap(ref c, ref d);
+            
+
+
             swap(ref a, ref b);
-            swap(ref a, ref c);
-
 
             Console.WriteLine(a);
             Console.WriteLine(b);
-            Console.WriteLine(c);
-            Console.WriteLine(d);
+            
         }
-        static void swap(ref int a, ref int b)
+        static void swap(ref string a, ref string b)
         {
-            int aCopy;
-            aCopy = a;
+            string x;
+            x = a;
             a = b;
-            b = aCopy;
+            b = x;
+            
+          
         }
     }
 }
